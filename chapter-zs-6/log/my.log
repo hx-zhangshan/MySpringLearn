@@ -1,0 +1,71 @@
+2018-08-24 11:40:30.606  INFO 9384 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Starting ChapterZs6Application on pc-PC with PID 9384 (E:\javaLearn\workspace1\chapter-zs-6\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-6)
+2018-08-24 11:40:30.606 DEBUG 9384 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-08-24 11:40:30.606  INFO 9384 --- [main] c.k.l.s.chapter.ChapterZs6Application    : No active profile set, falling back to default profiles: default
+2018-08-24 11:40:30.653  INFO 9384 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:40:30 CST 2018]; root of context hierarchy
+2018-08-24 11:40:31.341  INFO 9384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-08-24 11:40:31.356  INFO 9384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-24 11:40:31.356  INFO 9384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-24 11:40:31.420  INFO 9384 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-08-24 11:40:31.420  INFO 9384 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 782 ms
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-24 11:40:31.513  INFO 9384 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myfilter' to urls: [/*]
+2018-08-24 11:40:31.529  INFO 9384 --- [localhost-startStop-1] c.k.l.s.chapter.filter.Myfilter          : filter 初始化！！！
+2018-08-24 11:40:31.716  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:40:30 CST 2018]; root of context hierarchy
+2018-08-24 11:40:31.747  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-24 11:40:31.763  INFO 9384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-24 11:40:31.778  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:40:31.778  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:40:31.794  INFO 9384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:40:31.888  INFO 9384 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-24 11:40:31.919  INFO 9384 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-08-24 11:40:31.919  INFO 9384 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Started ChapterZs6Application in 1.5 seconds (JVM running for 2.121)
+2018-08-24 11:40:31.919  INFO 9384 --- [main] c.k.l.s.chapter.ChapterZs6Application    : chapter6  服务启动
+2018-08-24 11:41:53.865  INFO 9384 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-24 11:41:53.865  INFO 9384 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-24 11:41:53.881  INFO 9384 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-08-24 11:41:53.881  INFO 9384 --- [http-nio-8888-exec-1] c.k.l.s.chapter.filter.Myfilter          :  dofilter 开始处理请求
+2018-08-24 11:42:09.422  INFO 9384 --- [http-nio-8888-exec-4] c.k.l.s.chapter.filter.Myfilter          :  dofilter 开始处理请求
+2018-08-24 11:45:36.520  INFO 9384 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-24 11:45:36.520  INFO 9384 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:40:30 CST 2018]; root of context hierarchy
+2018-08-24 11:45:36.520  INFO 9384 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-24 11:45:36.723  INFO 9384 --- [localhost-startStop-2] c.k.l.s.chapter.filter.Myfilter          : filter 销毁！！！
+2018-08-24 11:46:16.463  INFO 8636 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Starting ChapterZs6Application on pc-PC with PID 8636 (E:\javaLearn\workspace1\chapter-zs-6\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-6)
+2018-08-24 11:46:16.463 DEBUG 8636 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-08-24 11:46:16.463  INFO 8636 --- [main] c.k.l.s.chapter.ChapterZs6Application    : No active profile set, falling back to default profiles: default
+2018-08-24 11:46:16.510  INFO 8636 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:46:16 CST 2018]; root of context hierarchy
+2018-08-24 11:46:17.214  INFO 8636 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-08-24 11:46:17.230  INFO 8636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-24 11:46:17.230  INFO 8636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-24 11:46:17.293  INFO 8636 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-08-24 11:46:17.293  INFO 8636 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 783 ms
+2018-08-24 11:46:17.387  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myfilter' to urls: [/*]
+2018-08-24 11:46:17.402  INFO 8636 --- [localhost-startStop-1] c.k.l.s.chapter.filter.Myfilter          : filter 初始化！！！
+2018-08-24 11:46:17.590  INFO 8636 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:46:16 CST 2018]; root of context hierarchy
+2018-08-24 11:46:17.636  INFO 8636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.MyController.demo()
+2018-08-24 11:46:17.636  INFO 8636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-24 11:46:17.636  INFO 8636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-24 11:46:17.668  INFO 8636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:46:17.668  INFO 8636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:46:17.683  INFO 8636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-24 11:46:17.777  INFO 8636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-24 11:46:17.808  INFO 8636 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-08-24 11:46:17.808  INFO 8636 --- [main] c.k.l.s.chapter.ChapterZs6Application    : Started ChapterZs6Application in 1.516 seconds (JVM running for 2.135)
+2018-08-24 11:46:17.808  INFO 8636 --- [main] c.k.l.s.chapter.ChapterZs6Application    : chapter6  服务启动
+2018-08-24 11:46:59.933  INFO 8636 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-24 11:46:59.934  INFO 8636 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-24 11:46:59.947  INFO 8636 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-24 11:46:59.954  INFO 8636 --- [http-nio-8888-exec-1] c.k.l.s.chapter.filter.Myfilter          :  dofilter 开始处理请求
+2018-08-24 11:47:09.977  INFO 8636 --- [http-nio-8888-exec-2] c.k.l.s.chapter.filter.Myfilter          :  dofilter 开始处理请求
+2018-08-24 11:47:35.949  INFO 8636 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-24 11:47:35.949  INFO 8636 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35fc6dc4: startup date [Fri Aug 24 11:46:16 CST 2018]; root of context hierarchy
+2018-08-24 11:47:35.949  INFO 8636 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-24 11:47:36.152  INFO 8636 --- [localhost-startStop-2] c.k.l.s.chapter.filter.Myfilter          : filter 销毁！！！
