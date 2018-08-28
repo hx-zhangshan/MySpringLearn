@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+</head>
+<body class="layout">
+<div class="wrap">
+    <!-- S top -->
+    <!-- S ÄÚÈÝ -->
+    <div class="panel-l container clearfix">
+        <div class="error">
+            <p class="title"><span class="code" th:text="${status}"></span>not_found the page</p>
+           
+            <div class="common-hint-word">
+                <div th:text="${#dates.format(timestamp,'yyyy-MM-dd HH:mm:ss')}"></div>
+                <div th:text="${messages}"></div>
+                <div th:text="${error}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
