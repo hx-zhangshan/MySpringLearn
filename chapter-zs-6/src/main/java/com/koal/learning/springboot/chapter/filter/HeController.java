@@ -10,48 +10,32 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-import org.springframework.core.annotation.Order;
-
 import lombok.extern.slf4j.Slf4j;
-/**
- * 
- * @author zhangS
- *
- * @date 2018年8月24日
- * 注册器名称是myfilter 拦截URL为 所有
- */
-//@WebFilter(filterName="myfilter",urlPatterns="/*")
+
+//@WebFilter(filterName="heController",urlPatterns="/*")
 @Slf4j
-//@Order(value=1)
-public class Myfilter implements Filter{
-	
-	@Override
+//测试后发现 order 没有生效
+//@Order(value=2)
+public class HeController implements Filter{@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		log.info("filter 初始化！！！");
+		log.info("he filter 初始化。。");
 		
 	}
 
-	
+    
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		log.info(" dofilter 开始处理请求");
+		log.info("he filter 开始调用过滤！！！");
 		
-		//对 request response 进行一些预处理
-		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
-		
-		// TODO 一些业务逻辑
-		
-		//链路 传递给下一个 过滤器使用
+		//继续下个调用
 		chain.doFilter(request, response);
 	}
 
 	@Override
 	public void destroy() {
-		log.info("filter 销毁！！！");
+		log.info("he filter 销毁。。");
 		
 	}
 
-	
 }
