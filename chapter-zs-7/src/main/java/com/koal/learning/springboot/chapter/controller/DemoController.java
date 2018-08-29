@@ -1,5 +1,7 @@
 package com.koal.learning.springboot.chapter.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +16,8 @@ import com.koal.learning.springboot.chapter.entry.DemoReq;
 public class DemoController {
 
 	@GetMapping(path="/demo")
-	public String demo(DemoReq demoReq) {
+	public String demo(@Valid DemoReq demoReq) {
 		
-		return "hello demo!!";
+		return demoReq.getResCode()+","+demoReq.getResMsg();
 	}
 }
