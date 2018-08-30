@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.druid.util.StringUtils;
@@ -19,6 +18,9 @@ import com.baomidou.mybatisplus.plugins.Page;
 import com.koal.learning.springboot.chapter.entity.User;
 import com.koal.learning.springboot.chapter.exception.CommonsException;
 import com.koal.learning.springboot.chapter.service.IUserService;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 /**
  * <p>
@@ -30,6 +32,7 @@ import com.koal.learning.springboot.chapter.service.IUserService;
  */
 @RestController
 @RequestMapping("/user")
+@Api(tags="用户api文档")
 public class UserController {
 
 	@Autowired
@@ -38,6 +41,7 @@ public class UserController {
 	@PostMapping("add")
 	// 正常业务下 会在user对象中进行事物的控制 而不是在 控制层进行
 //	@Transactional(rollbackFor = Exception.class)
+	@ApiOperation("用户新增")
 	public Map<String, String> addUser(@Valid @RequestBody UserReq userReq) {
 		User user = new User();
 		user.setCode(userReq.getCode());
@@ -55,6 +59,7 @@ public class UserController {
 	}
 
 	@PostMapping("update")
+	@ApiOperation("用户修改")
 	public Map<String, String> updateUser(@Valid @RequestBody UserReq userReq) {
 		if (StringUtils.isEmpty(userReq.getId())) {
 			throw new CommonsException("1000", "更新时主键是空！！！");
@@ -76,6 +81,7 @@ public class UserController {
 	}
 
 	@GetMapping("/get/{id}")
+	@ApiOperation("用户查询（ID）")
 	public Map<String, Object> getUser(@PathVariable("id") String id) {
 		User user = userService.selectById(id);
 		if (user == null) {
@@ -91,6 +97,7 @@ public class UserController {
 
 	}
 	@GetMapping("/page")
+	@ApiOperation("用户查询（分页）")
     public Map<String,Object> pageUser(int current, int size){
         //分页
         Page<User> page = new Page<>(current, size);
