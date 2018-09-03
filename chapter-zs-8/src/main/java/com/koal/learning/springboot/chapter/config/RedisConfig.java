@@ -1,7 +1,11 @@
 package com.koal.learning.springboot.chapter.config;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -19,9 +23,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @date 2018年9月3日
  */
 @Configuration
+@EnableCaching
+//开启速配ring支持的缓存 
 public class RedisConfig {
 
-	@Bean
+	@Bean("template")
 	public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
 		StringRedisTemplate template = new StringRedisTemplate(factory);
 		Jackson2JsonRedisSerializer<Object> jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer<>(
@@ -35,5 +41,17 @@ public class RedisConfig {
 		template.afterPropertiesSet();
 
 		return template;
+	}
+	@Bean
+	public CacheManager cacheManagerre(@Qualifier("template") RedisTemplate<String, String> template) {
+		RedisCacheManager rm=new RedisCacheManager(template);
+		//使用前缀
+        rm.setUsePrefix(true);
+        //缓存分割符 默认为 ":"
+//        rcm.setCachePrefix(new DefaultRedisCachePrefix(":"));
+        //设置缓存过期时间
+        //rcm.setDefaultExpiration(60);//秒
+
+		return rm;
 	}
 }

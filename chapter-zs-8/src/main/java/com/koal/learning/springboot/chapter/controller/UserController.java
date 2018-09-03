@@ -6,6 +6,8 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +22,7 @@ import com.koal.learning.springboot.chapter.exception.CommonsException;
 import com.koal.learning.springboot.chapter.service.IUserService;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 
 /**
@@ -60,6 +63,8 @@ public class UserController {
 
 	@PostMapping("update")
 	@ApiOperation("用户修改")
+	//进行更新的时候要删除缓存 保证数据是从数据库拿出来 最新的
+	@CacheEvict(value="zhangS",key="#userReq.id")
 	public Map<String, String> updateUser(@Valid @RequestBody UserReq userReq) {
 		if (StringUtils.isEmpty(userReq.getId())) {
 			throw new CommonsException("1000", "更新时主键是空！！！");
@@ -82,6 +87,8 @@ public class UserController {
 
 	@GetMapping("/get/{id}")
 	@ApiOperation("用户查询（ID）")
+	@ApiImplicitParam(name="id",value="查询ID",required=true)
+	@Cacheable(value="zhangS",key="#id")
 	public Map<String, Object> getUser(@PathVariable("id") String id) {
 		User user = userService.selectById(id);
 		if (user == null) {

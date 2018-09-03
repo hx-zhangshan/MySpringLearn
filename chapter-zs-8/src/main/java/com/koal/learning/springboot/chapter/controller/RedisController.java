@@ -1,6 +1,9 @@
 package com.koal.learning.springboot.chapter.controller;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,15 +19,16 @@ import io.swagger.annotations.ApiOperation;
 public class RedisController {
 
 	@Autowired
+//	@Qualifier("template")
 	StringRedisTemplate template;
 
 	@GetMapping("set/{key}/{value}")
 	@ApiOperation(value = "设置缓存的值")
-	public String set(@PathVariable("key") String key, @PathVariable("value") String value) {
+	public String set(@PathVariable("key") String key, @PathVariable("value") Object value) {
 
 		// 这里的key不能为null
 		// 对简单的值 进行操作
-		template.opsForValue().set(key, value);
+		template.opsForValue().set(key, value.toString());
 		return key + "," + value;
 	}
 
