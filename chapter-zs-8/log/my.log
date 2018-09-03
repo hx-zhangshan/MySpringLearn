@@ -1,0 +1,534 @@
+2018-08-30 15:37:50.244  INFO 5988 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 5988 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-08-30 15:37:50.247 DEBUG 5988 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-08-30 15:37:50.247  INFO 5988 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-08-30 15:37:50.281  INFO 5988 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:37:50 CST 2018]; root of context hierarchy
+2018-08-30 15:37:50.757  INFO 5988 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-08-30 15:37:50.987  WARN 5988 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-08-30 15:37:51.008  INFO 5988 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-08-30 15:37:51.009  INFO 5988 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-08-30 15:37:51.236  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d802659e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-30 15:37:51.530  INFO 5988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-08-30 15:37:51.554  INFO 5988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-30 15:37:51.554  INFO 5988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-30 15:37:51.647  INFO 5988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-08-30 15:37:51.647  INFO 5988 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1368 ms
+2018-08-30 15:37:51.773  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-30 15:37:51.777  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-30 15:37:51.778  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-30 15:37:51.778  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-30 15:37:51.778  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-30 15:37:51.877 ERROR 5988 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-08-30 15:37:52.037  INFO 5988 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-08-30 15:37:52.647  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-08-30 15:37:52.648  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-08-30 15:37:52.648  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-08-30 15:37:52.649  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-08-30 15:37:52.652  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-08-30 15:37:52.653  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-08-30 15:37:52.654  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-08-30 15:37:52.657  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-30 15:37:52.658  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-30 15:37:52.765  INFO 5988 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-08-30 15:37:52.914  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:37:50 CST 2018]; root of context hierarchy
+2018-08-30 15:37:52.955  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:37:52.955  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:37:52.968  INFO 5988 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-08-30 15:37:52.984  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:37:53.100  INFO 5988 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:37:50 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-08-30 15:37:53.101  INFO 5988 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-08-30 15:37:53.225  INFO 5988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-30 15:37:53.227  INFO 5988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-30 15:37:53.232  INFO 5988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-08-30 15:37:53.234  INFO 5988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-08-30 15:37:53.235  INFO 5988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-30 15:37:53.249  INFO 5988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-30 15:37:53.278  INFO 5988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-30 15:37:53.314  INFO 5988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-08-30 15:37:53.320  INFO 5988 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 3.297 seconds (JVM running for 3.987)
+2018-08-30 15:38:43.178  INFO 5988 --- [http-nio-8888-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-30 15:38:43.179  INFO 5988 --- [http-nio-8888-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-30 15:38:43.200  INFO 5988 --- [http-nio-8888-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-08-30 15:44:02.928  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-30 15:44:02.929  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:37:50 CST 2018]; root of context hierarchy
+2018-08-30 15:44:02.931  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-08-30 15:44:02.932  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-30 15:44:02.933  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-30 15:44:02.937  INFO 5988 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-08-30 15:44:11.810  INFO 10840 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 10840 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-08-30 15:44:11.813 DEBUG 10840 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-08-30 15:44:11.813  INFO 10840 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-08-30 15:44:11.851  INFO 10840 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:44:11 CST 2018]; root of context hierarchy
+2018-08-30 15:44:12.322  INFO 10840 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-08-30 15:44:12.538  WARN 10840 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-08-30 15:44:12.560  INFO 10840 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-08-30 15:44:12.560  INFO 10840 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-08-30 15:44:12.784  INFO 10840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db83fd50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-30 15:44:13.102  INFO 10840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-08-30 15:44:13.119  INFO 10840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-30 15:44:13.119  INFO 10840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-30 15:44:13.205  INFO 10840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-08-30 15:44:13.206  INFO 10840 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1359 ms
+2018-08-30 15:44:13.309  INFO 10840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-30 15:44:13.312  INFO 10840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-30 15:44:13.313  INFO 10840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-30 15:44:13.314  INFO 10840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-30 15:44:13.314  INFO 10840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-30 15:44:13.408 ERROR 10840 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-08-30 15:44:13.600  INFO 10840 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-08-30 15:44:14.186  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-08-30 15:44:14.188  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-08-30 15:44:14.189  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-08-30 15:44:14.189  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-08-30 15:44:14.193  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-08-30 15:44:14.194  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-08-30 15:44:14.195  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-08-30 15:44:14.198  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-30 15:44:14.199  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-30 15:44:14.305  INFO 10840 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-08-30 15:44:14.453  INFO 10840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:44:11 CST 2018]; root of context hierarchy
+2018-08-30 15:44:14.494  INFO 10840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:44:14.494  INFO 10840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:44:14.506  INFO 10840 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-08-30 15:44:14.523  INFO 10840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-30 15:44:14.655  INFO 10840 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:44:11 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-08-30 15:44:14.656  INFO 10840 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-08-30 15:44:14.798  INFO 10840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-30 15:44:14.799  INFO 10840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-30 15:44:14.805  INFO 10840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-08-30 15:44:14.808  INFO 10840 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-08-30 15:44:14.808  INFO 10840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-30 15:44:14.824  INFO 10840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-30 15:44:14.859  INFO 10840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-30 15:44:14.996  INFO 10840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-08-30 15:44:15.001  INFO 10840 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 3.409 seconds (JVM running for 4.083)
+2018-08-30 15:44:21.712  INFO 10840 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-30 15:44:21.712  INFO 10840 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-30 15:44:21.727  INFO 10840 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-08-30 15:49:10.779 DEBUG 10840 --- [http-nio-8888-exec-7] c.k.l.s.chapter.dao.UserDao.insert       : ==>  Preparing: INSERT INTO user ( id, code, `name` ) VALUES ( ?, ?, ? ) 
+2018-08-30 15:49:10.863 DEBUG 10840 --- [http-nio-8888-exec-7] c.k.l.s.chapter.dao.UserDao.insert       : ==> Parameters: 1035071918631251970(Long), 001(String), zhangS(String)
+2018-08-30 15:49:10.870 DEBUG 10840 --- [http-nio-8888-exec-7] c.k.l.s.chapter.dao.UserDao.insert       : <==    Updates: 1
+2018-08-30 15:49:59.800 DEBUG 10840 --- [http-nio-8888-exec-9] c.k.l.s.chapter.dao.UserDao.insert       : ==>  Preparing: INSERT INTO user ( id, code, `name` ) VALUES ( ?, ?, ? ) 
+2018-08-30 15:49:59.808 DEBUG 10840 --- [http-nio-8888-exec-9] c.k.l.s.chapter.dao.UserDao.insert       : ==> Parameters: 1035072124277977089(Long), 001(String), zhangS(String)
+2018-08-30 15:49:59.811 DEBUG 10840 --- [http-nio-8888-exec-9] c.k.l.s.chapter.dao.UserDao.insert       : <==    Updates: 1
+2018-08-30 15:50:19.786 DEBUG 10840 --- [http-nio-8888-exec-8] c.k.l.s.chapter.dao.UserDao.selectById   : ==>  Preparing: SELECT id AS id,code,`name`,`status`,gmt_create AS gmtCreate,gmt_modified AS gmtModified FROM user WHERE id=? 
+2018-08-30 15:50:19.812 DEBUG 10840 --- [http-nio-8888-exec-8] c.k.l.s.chapter.dao.UserDao.selectById   : ==> Parameters: 1020332806740959200(String)
+2018-08-30 15:50:19.828 DEBUG 10840 --- [http-nio-8888-exec-8] c.k.l.s.chapter.dao.UserDao.selectById   : <==      Total: 0
+2018-08-30 15:50:19.831  INFO 10840 --- [http-nio-8888-exec-8] c.k.l.s.c.e.CommonsExceptionHandler      : CommonException：用户ID：1020332806740959200，未找到(0001)
+2018-08-30 15:53:17.132  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-30 15:53:17.133  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@214b199c: startup date [Thu Aug 30 15:44:11 CST 2018]; root of context hierarchy
+2018-08-30 15:53:17.135  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-08-30 15:53:17.136  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-30 15:53:17.136  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-30 15:53:17.142  INFO 10840 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 10:56:39.188  INFO 9784 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 9784 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-09-03 10:56:39.209 DEBUG 9784 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-09-03 10:56:39.210  INFO 9784 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-09-03 10:56:39.391  INFO 9784 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 10:56:39 CST 2018]; root of context hierarchy
+2018-09-03 10:56:40.549  INFO 9784 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-09-03 10:56:41.169  WARN 9784 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-09-03 10:56:41.217  INFO 9784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-03 10:56:41.284  INFO 9784 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-09-03 10:56:41.285  INFO 9784 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-09-03 10:56:41.736  INFO 9784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d338a583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 10:56:42.419  INFO 9784 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-09-03 10:56:42.448  INFO 9784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 10:56:42.448  INFO 9784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 10:56:42.676  INFO 9784 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-09-03 10:56:42.676  INFO 9784 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3301 ms
+2018-09-03 10:56:42.839  INFO 9784 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 10:56:42.843  INFO 9784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 10:56:42.844  INFO 9784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 10:56:42.844  INFO 9784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 10:56:42.844  INFO 9784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 10:56:43.144 ERROR 9784 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-09-03 10:56:43.631  INFO 9784 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 10:56:44.849  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get/{key}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.get(java.lang.String)
+2018-09-03 10:56:44.850  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set/{key}/{value}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.set(java.lang.String,java.lang.String)
+2018-09-03 10:56:44.853  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 10:56:44.853  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 10:56:44.853  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-09-03 10:56:44.854  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-09-03 10:56:44.857  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 10:56:44.858  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 10:56:44.859  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 10:56:44.861  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 10:56:44.862  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 10:56:45.076  INFO 9784 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-03 10:56:45.327  INFO 9784 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 10:56:39 CST 2018]; root of context hierarchy
+2018-09-03 10:56:45.406  INFO 9784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:56:45.406  INFO 9784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:56:45.419  INFO 9784 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-09-03 10:56:45.444  INFO 9784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 10:56:45.827  INFO 9784 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 10:56:39 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-09-03 10:56:45.829  INFO 9784 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-03 10:56:46.004  INFO 9784 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 10:56:46.005  INFO 9784 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 10:56:46.010  INFO 9784 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-09-03 10:56:46.027  INFO 9784 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 10:56:46.027  INFO 9784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 10:56:46.122  INFO 9784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 10:56:46.181  INFO 9784 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 10:56:46.501  INFO 9784 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-09-03 10:56:46.506  INFO 9784 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 8.198 seconds (JVM running for 9.326)
+2018-09-03 10:57:37.436  INFO 9784 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 10:57:37.436  INFO 9784 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 10:57:37.466  INFO 9784 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-03 10:59:43.792  INFO 9784 --- [http-nio-8888-exec-3] c.k.l.s.c.e.CommonsExceptionHandler      : Exception：{}({})
+
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:169) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at com.koal.learning.springboot.chapter.controller.RedisController.set(RedisController.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_171]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	... 63 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:888) ~[commons-pool2-2.4.3.jar:2.4.3]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[commons-pool2-2.4.3.jar:2.4.3]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361) ~[commons-pool2-2.4.3.jar:2.4.3]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	... 66 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_171]
+	at redis.clients.jedis.Connection.connect(Connection.java:184) ~[jedis-2.9.0.jar:na]
+	... 73 common frames omitted
+
+2018-09-03 11:00:35.325  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-03 11:00:35.326  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 10:56:39 CST 2018]; root of context hierarchy
+2018-09-03 11:00:35.337  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-03 11:00:35.338  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 11:00:35.339  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 11:00:35.343  INFO 9784 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 11:28:29.786  INFO 10624 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 10624 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-09-03 11:28:29.789 DEBUG 10624 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-09-03 11:28:29.789  INFO 10624 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-09-03 11:28:29.825  INFO 10624 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:28:29 CST 2018]; root of context hierarchy
+2018-09-03 11:28:30.297  INFO 10624 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-09-03 11:28:30.536  WARN 10624 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-09-03 11:28:30.560  INFO 10624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-03 11:28:30.602  INFO 10624 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-09-03 11:28:30.603  INFO 10624 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-09-03 11:28:30.838  INFO 10624 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d338a583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 11:28:31.157  INFO 10624 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-09-03 11:28:31.178  INFO 10624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 11:28:31.178  INFO 10624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 11:28:31.292  INFO 10624 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-09-03 11:28:31.292  INFO 10624 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1469 ms
+2018-09-03 11:28:31.400  INFO 10624 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 11:28:31.404  INFO 10624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 11:28:31.405  INFO 10624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 11:28:31.405  INFO 10624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 11:28:31.405  INFO 10624 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 11:28:31.556 ERROR 10624 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-09-03 11:28:31.723  INFO 10624 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 11:28:32.338  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get/{key}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.get(java.lang.String)
+2018-09-03 11:28:32.339  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set/{key}/{value}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.set(java.lang.String,java.lang.String)
+2018-09-03 11:28:32.341  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:28:32.341  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:28:32.341  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-09-03 11:28:32.342  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-09-03 11:28:32.346  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 11:28:32.346  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 11:28:32.347  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 11:28:32.350  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 11:28:32.350  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 11:28:32.469  INFO 10624 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-03 11:28:32.638  INFO 10624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:28:29 CST 2018]; root of context hierarchy
+2018-09-03 11:28:32.683  INFO 10624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:28:32.684  INFO 10624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:28:32.695  INFO 10624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-09-03 11:28:32.714  INFO 10624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:28:32.910  INFO 10624 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:28:29 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-09-03 11:28:32.911  INFO 10624 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-03 11:28:33.070  INFO 10624 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 11:28:33.071  INFO 10624 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 11:28:33.078  INFO 10624 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-09-03 11:28:33.080  INFO 10624 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 11:28:33.080  INFO 10624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 11:28:33.097  INFO 10624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 11:28:33.136  INFO 10624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 11:28:33.293  INFO 10624 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-09-03 11:28:33.299  INFO 10624 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 3.748 seconds (JVM running for 4.454)
+2018-09-03 11:29:00.913  INFO 10624 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 11:29:00.913  INFO 10624 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 11:29:00.933  INFO 10624 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-09-03 11:31:01.076  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-03 11:31:01.076  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:28:29 CST 2018]; root of context hierarchy
+2018-09-03 11:31:01.079  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-03 11:31:01.081  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 11:31:01.081  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 11:31:01.086  INFO 10624 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 11:31:25.679  INFO 7728 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 7728 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-09-03 11:31:25.681 DEBUG 7728 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-09-03 11:31:25.682  INFO 7728 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-09-03 11:31:25.720  INFO 7728 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:31:25 CST 2018]; root of context hierarchy
+2018-09-03 11:31:26.272  INFO 7728 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-09-03 11:31:26.519  WARN 7728 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-09-03 11:31:26.544  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-03 11:31:26.588  INFO 7728 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-09-03 11:31:26.589  INFO 7728 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-09-03 11:31:26.843  INFO 7728 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d338a583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 11:31:27.158  INFO 7728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-09-03 11:31:27.178  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 11:31:27.178  INFO 7728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 11:31:27.289  INFO 7728 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-09-03 11:31:27.289  INFO 7728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1571 ms
+2018-09-03 11:31:27.395  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 11:31:27.399  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 11:31:27.399  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 11:31:27.400  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 11:31:27.400  INFO 7728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 11:31:27.549 ERROR 7728 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-09-03 11:31:27.725  INFO 7728 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 11:31:28.357  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get/{key}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.get(java.lang.String)
+2018-09-03 11:31:28.357  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set/{key}/{value}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.set(java.lang.String,java.lang.String)
+2018-09-03 11:31:28.359  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:31:28.360  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:31:28.360  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-09-03 11:31:28.360  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-09-03 11:31:28.364  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 11:31:28.366  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 11:31:28.366  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 11:31:28.369  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 11:31:28.370  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 11:31:28.486  INFO 7728 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-03 11:31:28.644  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:31:25 CST 2018]; root of context hierarchy
+2018-09-03 11:31:28.685  INFO 7728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:31:28.686  INFO 7728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:31:28.698  INFO 7728 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-09-03 11:31:28.718  INFO 7728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:31:28.914  INFO 7728 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:31:25 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-09-03 11:31:28.916  INFO 7728 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-03 11:31:29.064  INFO 7728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 11:31:29.066  INFO 7728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 11:31:29.072  INFO 7728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-09-03 11:31:29.074  INFO 7728 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 11:31:29.074  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 11:31:29.091  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 11:31:29.119  INFO 7728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 11:31:29.273  INFO 7728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-09-03 11:31:29.278  INFO 7728 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 3.834 seconds (JVM running for 4.554)
+2018-09-03 11:32:22.692  INFO 7728 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 11:32:22.693  INFO 7728 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 11:32:22.712  INFO 7728 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-09-03 11:36:19.738  INFO 7728 --- [http-nio-8888-exec-8] c.k.l.s.c.e.CommonsExceptionHandler      : Exception：{}({})
+
+org.springframework.dao.InvalidDataAccessApiUsageException: NOAUTH Authentication required.; nested exception is redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:64) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:241) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.set(JedisConnection.java:1223) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.DefaultStringRedisConnection.set(DefaultStringRedisConnection.java:744) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultValueOperations$10.inRedis(DefaultValueOperations.java:172) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:57) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:169) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	at com.koal.learning.springboot.chapter.controller.RedisController.set(RedisController.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_171]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.set(BinaryJedis.java:211) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.set(JedisConnection.java:1221) ~[spring-data-redis-1.8.14.RELEASE.jar:na]
+	... 62 common frames omitted
+
+2018-09-03 11:36:41.650  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-03 11:36:41.651  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:31:25 CST 2018]; root of context hierarchy
+2018-09-03 11:36:41.653  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-03 11:36:41.654  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 11:36:41.654  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 11:36:41.657  INFO 7728 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-09-03 11:36:51.363  INFO 10932 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Starting ChapterZs8Application on pc-PC with PID 10932 (E:\javaLearn\workspace1\chapter-zs-8\target\classes started by pc in E:\javaLearn\workspace1\chapter-zs-8)
+2018-09-03 11:36:51.366 DEBUG 10932 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Running with Spring Boot v1.5.16.BUILD-SNAPSHOT, Spring v4.3.18.RELEASE
+2018-09-03 11:36:51.367  INFO 10932 --- [main] c.k.l.s.chapter.ChapterZs8Application    : No active profile set, falling back to default profiles: default
+2018-09-03 11:36:51.405  INFO 10932 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:36:51 CST 2018]; root of context hierarchy
+2018-09-03 11:36:51.901  INFO 10932 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [mybatis/spring-mybatis.xml]
+2018-09-03 11:36:52.142  WARN 10932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.koal.learning.springboot.chapter]' package. Please check your configuration.
+2018-09-03 11:36:52.168  INFO 10932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-03 11:36:52.213  INFO 10932 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-09-03 11:36:52.214  INFO 10932 --- [main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-09-03 11:36:52.474  INFO 10932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d338a583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 11:36:52.766  INFO 10932 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2018-09-03 11:36:52.785  INFO 10932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-03 11:36:52.785  INFO 10932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-03 11:36:52.880  INFO 10932 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring embedded WebApplicationContext
+2018-09-03 11:36:52.880  INFO 10932 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1478 ms
+2018-09-03 11:36:52.994  INFO 10932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 11:36:52.998  INFO 10932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 11:36:52.999  INFO 10932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 11:36:52.999  INFO 10932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 11:36:52.999  INFO 10932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 11:36:53.186 ERROR 10932 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2018-09-03 11:36:53.363  INFO 10932 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-03 11:36:54.000  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/get/{key}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.get(java.lang.String)
+2018-09-03 11:36:54.001  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/set/{key}/{value}],methods=[GET]}" onto public java.lang.String com.koal.learning.springboot.chapter.controller.RedisController.set(java.lang.String,java.lang.String)
+2018-09-03 11:36:54.003  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.updateUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:36:54.004  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> com.koal.learning.springboot.chapter.controller.UserController.addUser(com.koal.learning.springboot.chapter.controller.UserReq)
+2018-09-03 11:36:54.004  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get/{id}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.getUser(java.lang.String)
+2018-09-03 11:36:54.005  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/page],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.koal.learning.springboot.chapter.controller.UserController.pageUser(int,int)
+2018-09-03 11:36:54.008  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 11:36:54.009  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 11:36:54.010  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 11:36:54.012  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 11:36:54.013  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 11:36:54.131  INFO 10932 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-03 11:36:54.311  INFO 10932 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:36:51 CST 2018]; root of context hierarchy
+2018-09-03 11:36:54.353  INFO 10932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:36:54.353  INFO 10932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:36:54.367  INFO 10932 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonsExceptionHandler
+2018-09-03 11:36:54.387  INFO 10932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 11:36:54.576  INFO 10932 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:36:51 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-09-03 11:36:54.577  INFO 10932 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-03 11:36:54.698  INFO 10932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 11:36:54.699  INFO 10932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-03 11:36:54.705  INFO 10932 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-09-03 11:36:54.719  INFO 10932 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 11:36:54.720  INFO 10932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 11:36:54.733  INFO 10932 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 11:36:54.758  INFO 10932 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 11:36:54.908  INFO 10932 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2018-09-03 11:36:54.912  INFO 10932 --- [main] c.k.l.s.chapter.ChapterZs8Application    : Started ChapterZs8Application in 3.784 seconds (JVM running for 4.522)
+2018-09-03 11:37:23.770  INFO 10932 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/zs]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 11:37:23.770  INFO 10932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 11:37:23.784  INFO 10932 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-09-03 11:39:11.516  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-09-03 11:39:11.517  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c417213: startup date [Mon Sep 03 11:36:51 CST 2018]; root of context hierarchy
+2018-09-03 11:39:11.519  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-03 11:39:11.520  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-03 11:39:11.520  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-03 11:39:11.524  INFO 10932 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
