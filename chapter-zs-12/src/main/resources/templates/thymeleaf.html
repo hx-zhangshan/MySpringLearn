@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>hello thymeleaf!</h1>
+	<!-- 注意：默认变量都不能 为null，要是为NUll 就会发生异常 -->
+	<!-- 这里后面几个"!"避免下，这样就是空白了 -->
+	<!-- <h2 th:text="'名称：'${name!} ,'来自：'${from!}">默认值</h2> -->
+	<!-- <h2 th:text="'名称：'+${name}+'，来自：'+${from}">默认值</h2> -->
+	<span th:text="'名称:'+${name}+',来自:'+${from}"></span>
+</body>
+</html>
