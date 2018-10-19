@@ -59,6 +59,17 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!--   配置了这个就不用 在静态文件中添加版本信息的路径了 -->
+		 <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>webjars-locator</artifactId>
+    	</dependency>
+		<!-- 静态资源依赖 -->
+		<dependency>
+			<groupId>com.koal.zs</groupId>
+			<artifactId>springboot-webjars</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
