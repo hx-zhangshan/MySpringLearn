@@ -30,14 +30,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!-- 热部署工具 -->
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-devtools</artifactId>
-				<!--true 标识依赖不会传递，若是别的包 使用了此项目 还要 额外饮用此包  -->
-				<optional>true</optional>
-			</dependency>
-		
+		<!-- webSocke 支持前端向后端 传值，web 支持jsr350 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
